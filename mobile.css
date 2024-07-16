@@ -1,0 +1,19 @@
+@media (max-width : 1025px) {
+    .loader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+
+    .loader h1 {
+        margin: auto;
+        padding:50%;
+
+    }
+
+    .page1 {
+        background-color: red;
+    }
+}

@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'freight big pro';
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    user-select: none;
+    /* Standard syntax */
+    -webkit-user-select: none;
+    /* WebKit-based browsers */
+}
+
+.main {
+    background-color: crimson;
+}
+
+
+
+
+
+.loader {
+    position: fixed;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    z-index: 9;
+   
+}
+
+.yellow1 {
+    position: absolute;
+    background-color: #f5e413;
+    height: 100vh;
+    width: 100%;
+    z-index: 8;
+}
+
+.yellow2 {
+    position: absolute;
+    background-color: #f5e413;
+    height: 100vh;
+    width: 100%;
+    z-index: 7;
+}
+
+.loader video {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: 6;
+}
+
+.loader h1 {
+    position: relative;
+    z-index: 7;
+
+    font-size: 134px;
+    text-align: center;
+    font-weight: 100;
+    line-height: 97px;
+    letter-spacing: 1px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 8;
+    padding: 30px 0px;
+    width: 100%;
+    /* background-color: crimson; */
+    /* background-color: firebrick; */
+}
+
+.menu {
+    display: flex;
+    /* background-color: coral; */
+    height: 100%;
+margin-right: 40px;
+    justify-content: flex-end;
+
+
+}
+
+.element {
+    /* background-color: blue; */
+    transform: translateX(20%);
+    transition: all linear .4s;
+}
+
+.element a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    /* display: none; */
+}
+
+
+
+.symbol {
+    width: 70px;
+    background-color: transparent;
+    display: flex;
+    z-index: 9;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.symbol i {
+    transform: rotate(45deg);
+    cursor: pointer;
+    font-size: 30px;
+    transition: all ease 1s;
+}
+
+.core-logo {
+    height: 35px;
+    width: 150px;
+    padding-left: 50px;
+}
+
+.nav svg path {
+    fill: black;
+
+}
+
+.page1 {
+    background-color: #f5e413;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.page1 h1 {
+    font-size: 134px;
+    color: black;
+    text-align: center;
+    font-weight: 100;
+    line-height: 97px;
+    letter-spacing: 1px;
+}
+
+.page2 {
+    background-color: silver;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+.elem {
+
+    /* background-color: black; */
+    width: 100%;
+    color: white;
+
+    position: relative;
+    cursor: pointer;
+}
+
+
+.elem h3 {
+    transition: all ease .2s;
+    font-size: 150px;
+    font-weight: 100;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 9;
+    line-height: 7rem;
+
+}
+
+.elem .moving {
+    background-color: #f5e413;
+    white-space: nowrap;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    transform: translate(0, -50%) scaleY(0);
+    transition: all ease 0.5s;
+    overflow: hidden;
+}
+
+
+.elem:nth-child(2) .blur-effect {
+    /* background-color: red; */
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    left: 50%;
+    top: 50%;
+    background: linear-gradient(to right, #f5e413, #f5e413, #f5e413);
+    z-index: 10;
+    box-shadow: 20px 0px 20px 12px #f5e413, -20px 0px 20px 12px #f5e413;
+    transform: translate(-50%, -50%);
+}
+
+.elem:nth-child(1) .blur-effect {
+    /* background-color: red; */
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    left: 50%;
+    top: 50%;
+    background: linear-gradient(to right, #f5e413, #f5e413, #f5e413);
+    z-index: 10;
+    box-shadow: 20px 0px 20px 12px #f5e413, -20px 0px 20px 12px #f5e413;
+    transform: translate(-50%, -50%);
+}
+
+.elem:nth-child(3) .blur-effect {
+    /* background-color: red; */
+    position: absolute;
+    height: 100%;
+    width: 35%;
+    left: 50%;
+    top: 50%;
+    background: linear-gradient(to right, #f5e413, #f5e413, #f5e413);
+    z-index: 10;
+    box-shadow: 20px 0px 20px 12px #f5e413, -20px 0px 20px 12px #f5e413;
+    transform: translate(-50%, -50%);
+}
+
+.elem:nth-child(4) .blur-effect {
+    /* background-color: red; */
+    position: absolute;
+    height: 100%;
+    width: 35%;
+    left: 50%;
+    top: 50%;
+    background: linear-gradient(to right, #f5e413, #f5e413, #f5e413);
+    z-index: 10;
+    box-shadow: 20px 0px 20px 12px #f5e413, -20px 0px 20px 12px #f5e413;
+    transform: translate(-50%, -50%);
+}
+
+.elem:hover .moving {
+    opacity: 1;
+    transform: translate(0, -50%) scaleY(1);
+
+}
+
+
+.elem .moving .moving-in {
+    /* background-color: rebeccapurple; */
+    display: inline-block;
+    white-space: nowrap;
+    padding: 8px 0px;
+    animation-name: moving;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.elem .moving .moving-in h5 {
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0px 8px;
+    transition: all ease 0.5s;
+    opacity: 0;
+    transition-delay: .3s;
+}
+
+.elem:hover .moving h5 {
+    opacity: 1;
+}
+
+.elem:hover h3 {
+    font-style: italic;
+    color: black;
+}
+
+@keyframes moving {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.page3 {
+    background-color: rgb(45, 44, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.img-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 50px;
+
+}
+
+.line {
+    height: 100%;
+}
+
+.line:nth-child(1) .img-box:nth-child(2n) {
+    height: 700px;
+    width: 550px;
+}
+
+.line:nth-child(3) .img-box:nth-child(2n) {
+    height: 750px;
+    width: 550px;
+}
+
+.img-box {
+    margin: 40px 10px;
+    height: 600px;
+    width: 550px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.img-box p {
+    position: absolute;
+    font-size: 60px;
+    z-index: 2;
+    color: white;
+    transition: all ease 0.5s;
+    opacity: 0;
+    font-style: italic;
+    letter-spacing: 2px;
+    line-height: 46px;
+    text-transform: uppercase;
+}
+
+.img-box:hover .overlay,
+.img-box:hover p {
+    opacity: 1;
+
+}
+
+.img-box:hover img {
+    scale: 1.3;
+}
+
+.img-box img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: all ease 0.5s;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: all ease 0.5s;
+    background-color: #000;
+    position: absolute;
+}
+
+.footer {
+    height: 40vh;
+    width: 100%;
+
+    color: black;
+
+}
+
+.footer .title {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.footer .title h1 {
+    color: black;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.footer .bottom {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    align-items: flex-end;
+}
